@@ -366,7 +366,6 @@ sl.create("sl.ui", function () {
         $textbox.addClass("combo-text");
         var $dropdownIcon = slChain("<span><span class='combo-arrow'></span></span>");
         $dropdownIcon.data("AllMenusItems", { AllMenusItems: null });
-        $textbox.appendTo($ContainerSpan);
         $ContainerSpan.append($dropdownIcon);
         $textbox.data("CalvinAutoComplete.data").TextBoxContainer = $ContainerSpan;
         $textbox.data("CalvinAutoComplete.data").dropdownIcon = $dropdownIcon;

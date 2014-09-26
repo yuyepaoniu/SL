@@ -65,7 +65,7 @@ sl.create("sl.ui", function () {
             var opts = sl.data(textBox, 'CalvinAutoComplete.data').options;
             var $loading = loadingHelper.GenerateLoading(textBox);
             loadingHelper.showLoading(textBox);
-            var key = textBox.value, param;
+            var key = textBox.value, params;
             //json数据
             if (/json/.test(opts.ajaxOption.contentType)) {
                 params = sl.Josn.stringify(sl.extend({ "key": key }, opts.ajaxOption.data));
